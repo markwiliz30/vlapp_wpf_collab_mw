@@ -1,0 +1,525 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:vlapp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:Control="clr-namespace:vlapp.Control" x:Class="vlapp.Upload_Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Upload_Page">
+
+    <Grid>
+        <materialDesign:DialogHost x:Name="popup_message" BorderBrush="{DynamicResource MaterialDesignDivider}">
+            <materialDesign:DialogHost.DialogContent>
+                <Grid Width="430" Height="649" HorizontalAlignment="Center">
+                    <ScrollViewer>
+                        <StackPanel Orientation="Vertical">
+                        <TextBlock x:Name="lbl_filename" Text="File Name: " FontWeight="Bold" FontSize="23" Margin="15"/>
+                        
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox
+                            x:Name="txt_filename"
+                            FontSize="19"
+                            Width="340"
+                            Margin="15"
+                            Focusable="False"
+                            materialDesign:HintAssist.Hint="Name" />
+                            <Button x:Name="btn_file_open"  Margin="10" Style="{StaticResource MaterialDesignFloatingActionButton}" BorderBrush="Transparent" Background="Transparent" 
+                                    Height="20" Width="20" HorizontalAlignment="Right" Click="btn_file_open_Click" >
+                                <materialDesign:PackIcon Kind="File" Height="20" Width="20" Foreground="#6200ee"/>
+                            </Button>
+                        </StackPanel>
+                          
+                        <!--<TextBox
+                            x:Name="txt_path"
+                            FontSize="19" Margin="15"
+                            Focusable="False"
+                            materialDesign:HintAssist.Hint="Path" />-->
+                            <TextBlock x:Name="lbl_schedule" Text="Schedule: " FontWeight="Bold" FontSize="23" Margin="15"/>
+                            <!--<materialDesign:Chip Margin="15" FontSize="15" FontWeight="Bold" Content="Schedule" />-->
+
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:Chip Margin="15" FontSize="15" FontWeight="Bold" Content="Date" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Date: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <DatePicker
+                                    x:Name="date_fromDate"
+                                    Width="100"
+                                    Margin="25 0 5 0"
+                                    SelectedDateChanged="date_fromDate_SelectedDateChanged"
+                                    materialDesign:HintAssist.Hint="From Date"
+                                    materialDesign:TextFieldAssist.HasClearButton="True"
+                                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}">
+                            </DatePicker>
+
+                            <!--<TextBlock Text="To " FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <DatePicker
+                                    x:Name="date_toDate"
+                                    Width="100"
+                                    Margin="25 0 5 0"
+                                    materialDesign:HintAssist.Hint="To Date"
+                                    materialDesign:TextFieldAssist.HasClearButton="True"
+                                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}"/>
+                        </StackPanel>
+
+                        <!--<Calendar x:Name="MaterialCalendar" Margin="-1 -4 -1 0" 
+          IsTodayHighlighted="False"
+          Background="Black" SelectionMode="SingleRange">
+                            
+                            <Calendar.Resources>
+                                <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Gray" />
+                                <SolidColorBrush x:Key="MaterialDesignBody" Color="White" />
+                            </Calendar.Resources>
+                        </Calendar>-->
+
+
+                        <!--<TextBlock 
+                            FontSize="19" Margin="15 15 15 5" FontWeight="Bold"
+                            Text="Days"/>-->
+                            <!--<materialDesign:Chip Margin="15" FontSize="15" FontWeight="Bold" Content="Days" />-->
+                        
+                        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="50" Margin="5">
+                                <ToggleButton
+                                x:Name="toggle_Monday"
+                                Content="M"
+                                FontWeight="Bold"
+                                Background="Transparent"
+                                Style="{StaticResource MaterialDesignActionLightToggleButton}"
+                                ToolTip="Monday"/>
+                            </Border>
+                            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="50" Margin="5">
+                                <ToggleButton
+                                x:Name="toggle_Tuesday"
+                                Content="T"
+                                FontWeight="Bold"
+                                Background="Transparent"
+                                Style="{StaticResource MaterialDesignActionLightToggleButton}"
+                                ToolTip="Tuesday"/>
+                            </Border>
+                            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="50" Margin="5">
+                                <ToggleButton
+                                x:Name="toggle_Wednesday"
+                                Content="W"
+                                FontWeight="Bold"
+                                Background="Transparent"
+                                Style="{StaticResource MaterialDesignActionLightToggleButton}"
+                                ToolTip="Wednesday"/>
+                            </Border>
+                            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="50" Margin="5">
+                                <ToggleButton
+                                x:Name="toggle_Thursday"
+                                Content="TH"
+                                FontWeight="Bold"
+                                Background="Transparent"
+                                Style="{StaticResource MaterialDesignActionLightToggleButton}"
+                                ToolTip="Thursday"/>
+                            </Border>
+                            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="50" Margin="5">
+                                <ToggleButton
+                                x:Name="toggle_Friday"
+                                Content="F"
+                                FontWeight="Bold"
+                                Background="Transparent"
+                                Style="{StaticResource MaterialDesignActionLightToggleButton}"
+                                ToolTip="Friday"/>
+                            </Border>
+                            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="50" Margin="5">
+                                <ToggleButton
+                                x:Name="toggle_Saturday"
+                                Content="ST"
+                                FontWeight="Bold"
+                                Background="Transparent"
+                                Style="{StaticResource MaterialDesignActionLightToggleButton}"
+                                ToolTip="Saturday"/>
+                            </Border>
+                            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="50" Margin="5">
+                                <ToggleButton
+                                x:Name="toggle_Sunday"
+                                Content="SU"
+                                FontWeight="Bold"
+                                Background="Transparent"
+                                Style="{StaticResource MaterialDesignActionLightToggleButton}"
+                                ToolTip="Sunday"/>
+                            </Border>
+                            
+                        </StackPanel>-->
+
+                        <!-- All Days-->
+                        <StackPanel x:Name="day_all" Orientation="Horizontal" IsEnabled="True">
+                            <CheckBox
+                                x:Name="check_allDays"
+                                IsChecked="False"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_allDays_Click"/>
+                            <materialDesign:Chip Margin="5 15 29 15" FontSize="15" FontWeight="Bold" Content="All Days" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_all"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_all_SelectedTimeChanged" />
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_all"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_all_SelectedTimeChanged"/>
+                        </StackPanel>
+
+                        <!-- Monday-->
+                        <StackPanel x:Name="day_monday" Orientation="Horizontal" IsEnabled="False" Visibility="Collapsed">
+                            <CheckBox
+                                x:Name="check_monday"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_monday_Click"/>
+                            <materialDesign:Chip Margin="5 15 29 15" FontSize="15" FontWeight="Bold" Content="Monday" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_monday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_monday_SelectedTimeChanged"/>
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_monday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_monday_SelectedTimeChanged"/>
+                        </StackPanel>
+
+                        <!-- Tuesday-->
+                        <StackPanel x:Name="day_tuesday" Orientation="Horizontal" IsEnabled="False" Visibility="Collapsed">
+                            <CheckBox
+                                x:Name="check_tuesday"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_tuesday_Click"/>
+                            <materialDesign:Chip Margin="5 15 29 15" FontSize="15" FontWeight="Bold" Content="Tuesday" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_tuesday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_tuesday_SelectedTimeChanged"/>
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_tuesday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_tuesday_SelectedTimeChanged"/>
+                        </StackPanel>
+
+                        <!-- Wednesday-->
+                        <StackPanel x:Name="day_wednesday" Orientation="Horizontal" IsEnabled="False" Visibility="Collapsed">
+                            <CheckBox
+                                x:Name="check_wednesday"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_wednesday_Click"/>
+                            <materialDesign:Chip Margin="5 15 5 15" FontSize="15" FontWeight="Bold" Content="Wednesday" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_wednesday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_wednesday_SelectedTimeChanged"/>
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_wednesday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_wednesday_SelectedTimeChanged"/>
+                        </StackPanel>
+
+                        <!-- Thrusday-->
+                        <StackPanel x:Name="day_thrusday" Orientation="Horizontal" IsEnabled="False" Visibility="Collapsed">
+                            <CheckBox
+                                x:Name="check_thursday"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_thursday_Click"/>
+                            <materialDesign:Chip Margin="5 15 21 15" FontSize="15" FontWeight="Bold" Content="Thursday" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_thursday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_thursday_SelectedTimeChanged"/>
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_thursday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_thursday_SelectedTimeChanged"/>
+                        </StackPanel>
+
+                        <!-- Friday-->
+                        <StackPanel x:Name="day_friday" Orientation="Horizontal" IsEnabled="False" Visibility="Collapsed">
+                            <CheckBox
+                                x:Name="check_friday"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_friday_Click"/>
+                            <materialDesign:Chip Margin="5 15 42 15" FontSize="15" FontWeight="Bold" Content="Friday" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_friday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_friday_SelectedTimeChanged"/>
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_friday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_friday_SelectedTimeChanged"/>
+                        </StackPanel>
+
+                        <!-- Saturday-->
+                        <StackPanel x:Name="day_saturday" Orientation="Horizontal" IsEnabled="False" Visibility="Collapsed">
+                            <CheckBox
+                                x:Name="check_saturday"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_saturday_Click"/>
+                            <materialDesign:Chip Margin="5 15 23 15" FontSize="15" FontWeight="Bold" Content="Saturday" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_saturday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_saturday_SelectedTimeChanged"/>
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_saturday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_saturday_SelectedTimeChanged"/>
+                        </StackPanel>
+
+                        <!-- Sunday-->
+                        <StackPanel x:Name="day_sunday" Orientation="Horizontal" IsEnabled="False" Visibility="Collapsed">
+                            <CheckBox
+                                x:Name="check_sunday"
+                                Margin="10"
+                                Style="{StaticResource MaterialDesignCheckBox}" Click="check_sunday_Click"/>
+                            <materialDesign:Chip Margin="5 15 33 15" FontSize="15" FontWeight="Bold" Content="Sunday" />
+                            <!--<TextBlock 
+                            FontSize="19" Margin="15" FontWeight="Bold"
+                            Text="Time: "/>-->
+                            <!--<TextBlock Text="From "  FontSize="15" FontWeight="Bold" Margin="5 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_fromTime_sunday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="From Time" SelectedTimeChanged="time_fromTime_sunday_SelectedTimeChanged"/>
+                            <!--<TextBlock Text="To "  FontSize="15" FontWeight="Bold" Margin="25 20 5 0"/>-->
+                            <materialDesign:TimePicker
+                            x:Name="time_toTime_sunday"
+                                Focusable="False"
+                            Width="100" 
+                            Margin="25 0 5 0"
+                            Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                            materialDesign:HintAssist.Hint="To Time" SelectedTimeChanged="time_toTime_sunday_SelectedTimeChanged"/>
+                        </StackPanel>
+                        
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15">
+                                <Button x:Name="btn_delete"  Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center" Foreground="Red" Visibility="Collapsed" Click="btn_delete_Click">
+                                    Delete
+                                </Button>
+                                <Button x:Name="btn_cancel" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center" Click="btn_cancel_Click">
+                                    Cancel
+                                </Button>
+                                <Button x:Name="btn_save"  Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center" Click="btn_save_Click">
+                                    Save
+                                </Button>
+                            </StackPanel>
+
+                        </StackPanel>
+                    </ScrollViewer>
+                    
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+            <!--<ListBox x:Name="listbox_card_video" ItemsSource="{Binding}"  AllowDrop="true" HorizontalContentAlignment="Stretch" Height="Auto" Drop="listbox_card_video_Drop">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <materialDesign:Card
+                    materialDesign:ShadowAssist.ShadowDepth="Depth1"
+                    materialDesign:ShadowAssist.ShadowEdges="Top"
+                    >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
+                                --><!--<Button x:Name="btn_play" Margin="15" materialDesign:RippleAssist.Feedback="Transparent" Style="{StaticResource MaterialDesignFloatingActionButton}" BorderBrush="Transparent" Background="#6200ee" 
+                                    VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40" >
+                                    <materialDesign:PackIcon Kind="Play" Height="30" Width="30"/>
+                                </Button>--><!--
+
+                                <TextBlock Grid.Column="0" x:Name="lbl_title_name" >
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="Foreground" Value="Black"/>
+                                            <Setter Property="Text" Value="{Binding title}"/>
+                                            <Setter Property="FontSize" Value="23" />
+                                            <Setter Property="Margin" Value="15" />
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+
+                                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                    <TextBlock x:Name="lbl_from" >
+                                        <TextBlock.Style>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                                <Setter Property="Foreground" Value="Black"/>
+                                                <Setter Property="Text" Value="From: "/>
+                                                <Setter Property="FontSize" Value="23" />
+                                                <Setter Property="Margin" Value="15" />
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <materialDesign:TimePicker
+                                    x:Name="time_from"
+                                Width="100"
+                                IsEnabled="True"
+                                Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                                FontSize="17"
+                                  SelectedTime="{Binding tfrom}"
+                                    Is24Hours="True"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="3" Orientation="Horizontal">
+                                    <TextBlock  x:Name="lbl_to" >
+                                        <TextBlock.Style>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                                <Setter Property="Foreground" Value="Black"/>
+                                                <Setter Property="Text" Value="To: "/>
+                                                <Setter Property="FontSize" Value="23" />
+                                                <Setter Property="Margin" Value="15" />
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <materialDesign:TimePicker
+                                    x:Name="time_to"
+                                Width="100"
+                                IsEnabled="True"
+                                Style="{StaticResource MaterialDesignFloatingHintTimePicker}"
+                                FontSize="17"
+                                SelectedTime="{Binding tto}" 
+                                    Is24Hours="True"/>
+                                </StackPanel>
+
+
+                                <Button Grid.Column="4" x:Name="btn_delete" Margin="15" Style="{StaticResource MaterialDesignFloatingActionButton}" BorderBrush="Transparent" Background="#6200ee" 
+                                    VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40" >
+                                    <materialDesign:PackIcon Kind="Delete" Height="25" Width="25"/>
+                                </Button>
+                            </Grid>
+                        </materialDesign:Card>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>-->
+
+            <ListBox Grid.ColumnSpan="4" x:Name="listbox_card_video" ItemsSource="{Binding}" Width="auto" Height="auto" AllowDrop="true" Drop="listbox_card_video_Drop">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+
+                        <WrapPanel IsItemsHost="True" />
+
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="10">
+                            <Button x:Name="btn_videos" materialDesign:ShadowAssist.ShadowDepth="Depth1" materialDesign:ShadowAssist.ShadowEdges="Top" Background="Transparent" BorderBrush="Transparent"
+                      Width="175" Height="100" Click="btn_videos_Click" >
+
+                                <TextBlock x:Name="ta" >
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="TextWrapping" Value="Wrap" />
+                                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="Foreground" Value="Black"/>
+                                            <Setter Property="Text" Value="{Binding title}"/>
+                                            <Setter Property="FontSize" Value="20" />
+                                            <Setter Property="FontWeight" Value="Bold" />
+                                            <Setter Property="Margin" Value="5" />
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Button>
+                        </Border>
+
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </materialDesign:DialogHost>
+        <Button x:Name="btn_add_video" Margin="15" Style="{StaticResource MaterialDesignFloatingActionButton}" BorderBrush="Transparent" Background="#6200ee" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="btn_add_video_Click">
+                <materialDesign:PackIcon Kind="Plus" Height="25" Width="25"/>
+            </Button>
+       
+    </Grid>
+</Page>

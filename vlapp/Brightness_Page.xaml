@@ -1,0 +1,311 @@
+﻿<Page x:Class="vlapp.Brightness_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:vlapp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Brightness_Page">
+
+        
+    <materialDesign:DialogHost x:Name="popup_BrightnessChange" BorderBrush="{DynamicResource MaterialDesignDivider}" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <materialDesign:DialogHost.DialogContent >
+            <Grid Width="345" Height="430">
+                <StackPanel Orientation="Vertical">
+                        <StackPanel Margin="15" Orientation="Horizontal">
+                            <materialDesign:Chip x:Name="txt_BlindNumber_popup" FontSize="15" FontWeight="Bold" Content="Blind ID: " />
+                            <materialDesign:Chip x:Name="txt_ModuleNumber_popup" FontSize="15" FontWeight="Bold" Content="Module Number: " />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock x:Name="txt_popup_all" FontWeight="Bold" Text="Current gain: 0" FontSize="15" Margin="15 15 0 0" />
+                            <Slider x:Name="slider_popup_all" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="slider_popup_all_ValueChanged"   />
+                            <TextBlock x:Name="txt_popup_red" FontWeight="Bold" Text="Red: 0" FontSize="15" Margin="15 0 0 0" />
+                            <Slider x:Name="slider_popup_red" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="slider_popup_red_ValueChanged"  />
+                            <TextBlock x:Name="txt_popup_green" FontWeight="Bold" Text="Green: 0" FontSize="15" Margin="15 0 0 0" />
+                            <Slider x:Name="slider_popup_green" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="slider_popup_green_ValueChanged"  />
+                            <TextBlock x:Name="txt_popup_blue" FontWeight="Bold" Text="Blue: 0" FontSize="15" Margin="15 0 0 0" />
+                            <Slider x:Name="slider_popup_blue" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="slider_popup_blue_ValueChanged"  />
+                        </StackPanel>
+                    </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15">
+                    <Button x:Name="btn_cancel" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center" Click="btn_cancel_Click">
+                        Cancel
+                    </Button>
+                    <Button x:Name="btn_save"  Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center" Click="btn_save_Click">
+                        Save
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </materialDesign:DialogHost.DialogContent>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="15">
+                <Button x:Name="btn_Refresh"
+                    Visibility="Collapsed"
+                    Margin="15"
+                    Width="100"
+                    materialDesign:ButtonAssist.CornerRadius="5"
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    Content="{materialDesign:PackIcon Kind=Refresh}"/>
+                <Button x:Name="btn_Save_Arrangement"
+                        Margin="15"
+                        Width="100"
+                        Style="{StaticResource MaterialDesignRaisedLightButton}"
+                        materialDesign:ButtonAssist.CornerRadius="5">
+                    <TextBlock Text="Save" />
+                </Button>
+
+            </StackPanel>-->
+                <ListBox Grid.ColumnSpan="4" x:Name="listbox_arrange_ip" ItemsSource="{Binding}" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+
+                        <WrapPanel IsItemsHost="True" />
+                        
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="10">
+                            <Button x:Name="btn_esp" materialDesign:ShadowAssist.ShadowDepth="Depth1" materialDesign:ShadowAssist.ShadowEdges="Top" Background="Transparent" BorderBrush="Transparent"
+                      Width="125" Height="250" Click="btn_esp_Click" >
+
+                                <TextBlock x:Name="ta" >
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="Foreground" Value="Black"/>
+                                                <Setter Property="Text" Value="{Binding nodeIndex}"/>
+                                            <Setter Property="FontSize" Value="39" />
+                                            <Setter Property="Margin" Value="15" />
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Button>
+                        </Border>
+
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+                <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal">
+                    <materialDesign:Chip x:Name="txt_EspNumber" FontSize="15" FontWeight="Bold" Content="Selected Esp ID: " />
+                    <materialDesign:Chip x:Name="txt_BlindNumber" FontSize="15" FontWeight="Bold" Content="Number of blinds: " Margin="20 0 0 0" />
+                </StackPanel>
+                <!--<Button Grid.Row="1" Grid.Column="4" x:Name="btn_All_brightness" materialDesign:ShadowAssist.ShadowDepth="Depth1" materialDesign:ShadowAssist.ShadowEdges="Top" Style="{StaticResource MaterialDesignRaisedLightButton}"
+                      Width="auto" Margin="10" >
+                    <TextBlock Text="Adjust all brightness" FontSize="15" Foreground="Black" />
+                </Button>-->
+                
+                <!--Borders-->
+                <Border x:Name="blind_1" Grid.Row="2" BorderBrush="black" BorderThickness="1 1 1 0" CornerRadius="10" ScrollViewer.VerticalScrollBarVisibility="Visible" IsEnabled="False" >
+                <StackPanel>
+                    <TextBlock Text="Blind 1" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                    
+                    <TextBlock x:Name="txtb1_all" FontWeight="Bold" Text="Current gain: 0" FontSize="15" Margin="15 15 0 0" />
+                    <Slider x:Name="sliderb1_all" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb1_all_ValueChanged" />
+                    <TextBlock x:Name="txtb1_red" FontWeight="Bold" Text="Red: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb1_red" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb1_red_ValueChanged" />
+                    <TextBlock x:Name="txtb1_green" FontWeight="Bold" Text="Green: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb1_green" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb1_green_ValueChanged" />
+                    <TextBlock x:Name="txtb1_blue" FontWeight="Bold" Text="Blue: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb1_blue" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb1_blue_ValueChanged" />
+                        <Button x:Name="btn_save_blind1_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_save_blind1_brightness_Click">
+                            <TextBlock Text="Save" />
+                        </Button>
+
+                        <Button x:Name="btn_reset_blind1_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedLightButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_reset_blind1_brightness_Click">
+                            <TextBlock Text="Reset" />
+                        </Button>
+
+                        <TextBlock Text="Modules" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                       
+                        <ListBox x:Name="listbox_module_1" ItemsSource="{Binding}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="black" BorderThickness="3" CornerRadius="10" Width="231">
+                                        <Button x:Name="btn_module1" materialDesign:ShadowAssist.ShadowDepth="Depth1" materialDesign:ShadowAssist.ShadowEdges="Top" Background="Transparent" BorderBrush="Transparent"
+                      Width="auto" Height="50" Click="btn_module1_Click_1" >
+                                            <TextBlock Text="{Binding ModulePosition}" FontSize="20" Foreground="Black" />
+                                        </Button>
+                                    </Border>
+
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+                    </StackPanel>
+            </Border>
+
+                <Border x:Name="blind_2" Grid.Row="2" Grid.Column="1" BorderBrush="black" BorderThickness="0 1 1 0" CornerRadius="10" IsEnabled="False" >
+                <StackPanel>
+                    <TextBlock Text="Blind 2" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                    
+                    <TextBlock x:Name="txtb2_all" FontWeight="Bold" Text="Current gain: 0" FontSize="15" Margin="15 15 0 0" />
+                    <Slider x:Name="sliderb2_all" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb2_all_ValueChanged" />
+                    <TextBlock x:Name="txtb2_red" FontWeight="Bold" Text="Red: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb2_red" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb2_red_ValueChanged" />
+                    <TextBlock x:Name="txtb2_green" FontWeight="Bold" Text="Green: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb2_green" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb2_green_ValueChanged" />
+                    <TextBlock x:Name="txtb2_blue" FontWeight="Bold" Text="Blue: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb2_blue" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb2_blue_ValueChanged" />
+
+                        <Button x:Name="btn_save_blind2_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_save_blind2_brightness_Click">
+                            <TextBlock Text="Save" />
+                        </Button>
+
+                        <Button x:Name="btn_reset_blind2_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedLightButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_reset_blind2_brightness_Click">
+                            <TextBlock Text="Reset" />
+                        </Button>
+
+                        <TextBlock Text="Modules" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+
+                        <ListBox x:Name="listbox_module_2" ItemsSource="{Binding}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="black" BorderThickness="3" CornerRadius="10" Width="231">
+                                        <Button x:Name="btn_module2" materialDesign:ShadowAssist.ShadowDepth="Depth1" materialDesign:ShadowAssist.ShadowEdges="Top" Background="Transparent" BorderBrush="Transparent"
+                      Width="auto" Height="50" Click="btn_module2_Click" >
+                                            <TextBlock Text="{Binding ModulePosition}" FontSize="20" Foreground="Black" />
+                                        </Button>
+                                    </Border>
+
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+            </Border>
+
+                <Border x:Name="blind_3" Grid.Row="2" Grid.Column="2" BorderBrush="black" BorderThickness="0 1 1 0" CornerRadius="10" IsEnabled="False" >
+                <StackPanel>
+                    <TextBlock Text="Blind 3" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                    
+                    <TextBlock x:Name="txtb3_all" FontWeight="Bold" Text="Current gain: 0" FontSize="15" Margin="15 15 0 0" />
+                    <Slider x:Name="sliderb3_all" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb3_all_ValueChanged"/>
+                    <TextBlock x:Name="txtb3_red" FontWeight="Bold" Text="Red: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb3_red" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb3_red_ValueChanged" />
+                    <TextBlock x:Name="txtb3_green" FontWeight="Bold" Text="Green: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb3_green" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb3_green_ValueChanged" />
+                    <TextBlock x:Name="txtb3_blue" FontWeight="Bold" Text="Blue: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb3_blue" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb3_blue_ValueChanged" />
+
+                        <Button x:Name="btn_save_blind3_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_save_blind3_brightness_Click">
+                            <TextBlock Text="Save" />
+                        </Button>
+                    
+                        <Button x:Name="btn_reset_blind3_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedLightButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_reset_blind3_brightness_Click">
+                            <TextBlock Text="Reset" />
+                        </Button>
+
+                        <TextBlock Text="Modules" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+
+                        <ListBox x:Name="listbox_module_3" ItemsSource="{Binding}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="Black" BorderThickness="3" CornerRadius="10" Width="231">
+                                        <Button x:Name="btn_module3" materialDesign:ShadowAssist.ShadowDepth="Depth1" materialDesign:ShadowAssist.ShadowEdges="Top" Background="Transparent" BorderBrush="Transparent"
+                      Width="auto" Height="50" Click="btn_module3_Click" >
+                                            <TextBlock Text="{Binding ModulePosition}" FontSize="20" Foreground="Black" />
+                                        </Button>
+                                    </Border>
+
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+                    </StackPanel>
+            </Border>
+
+                <Border x:Name="blind_4" Grid.Row="2" Grid.Column="3" BorderBrush="black" BorderThickness="0 1 1 1" CornerRadius="10" IsEnabled="False">
+                <StackPanel>
+                    <TextBlock Text="Blind 4" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                    
+                    <TextBlock x:Name="txtb4_all" FontWeight="Bold" Text="Current gain: 0" FontSize="15" Margin="15 15 0 0" />
+                    <Slider x:Name="sliderb4_all" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb4_all_ValueChanged" />
+                    <TextBlock x:Name="txtb4_red" FontWeight="Bold" Text="Red: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb4_red" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb4_red_ValueChanged" />
+                    <TextBlock x:Name="txtb4_green" FontWeight="Bold" Text="Green: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb4_green" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb4_green_ValueChanged" />
+                    <TextBlock x:Name="txtb4_blue" FontWeight="Bold" Text="Blue: 0" FontSize="15" Margin="15 0 0 0" />
+                    <Slider x:Name="sliderb4_blue" Minimum="0" Maximum="100" TickFrequency="10" TickPlacement="BottomRight" Margin="15" ValueChanged="sliderb4_blue_ValueChanged" />
+
+                        <Button x:Name="btn_save_blind4_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_save_blind4_brightness_Click">
+                            <TextBlock Text="Save" />
+                        </Button>
+
+                        <Button x:Name="btn_reset_blind4_brightness"
+                        Width="200"
+                        Style="{StaticResource MaterialDesignRaisedLightButton}"
+                        Margin="0 10 0 10"
+                        materialDesign:ButtonAssist.CornerRadius="5" Click="btn_reset_blind4_brightness_Click">
+                            <TextBlock Text="Reset" />
+                        </Button>
+
+                        <TextBlock Text="Modules" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+
+                        <ListBox x:Name="listbox_module_4" ItemsSource="{Binding}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="black" BorderThickness="3" CornerRadius="10" Width="231">
+                                        <Button x:Name="btn_module4" materialDesign:ShadowAssist.ShadowDepth="Depth1" materialDesign:ShadowAssist.ShadowEdges="Top" Background="Transparent" BorderBrush="Transparent"
+                      Width="auto" Height="50" Click="btn_module4_Click">
+                                            <TextBlock Text="{Binding ModulePosition}" FontSize="20" Foreground="Black" />
+                                        </Button>
+                                    </Border>
+
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+            </Border>
+          
+        </Grid>
+        </ScrollViewer>
+    </materialDesign:DialogHost>
+    
+</Page>

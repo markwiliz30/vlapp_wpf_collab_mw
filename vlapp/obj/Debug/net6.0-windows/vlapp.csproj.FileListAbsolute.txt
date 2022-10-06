@@ -1,0 +1,206 @@
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.exe
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.deps.json
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.runtimeconfig.json
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.dll
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.pdb
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\Dragablz.dll
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.AssemblyReference.cache
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Brightness_Page.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Collection_Page.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\CardList.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Upload_Page.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\App.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.cache
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.lref
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\App.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Brightness_Page.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Collection_Page.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\CardList.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Upload_Page.baml
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.g.resources
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfoInputs.cache
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfo.cs
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CoreCompileInputs.cache
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CopyComplete
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.dll
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\refint\vlapp.dll
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.pdb
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.genruntimeconfig.cache
+D:\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\ref\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.exe
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.deps.json
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.runtimeconfig.json
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.pdb
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\Dragablz.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\EntityFramework.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.AssemblyReference.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Brightness_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Collection_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\CardList.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.lref
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\App.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Brightness_Page.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Collection_Page.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\CardList.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.g.resources
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfoInputs.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfo.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CoreCompileInputs.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CopyComplete
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\refint\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.pdb
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\vlapp.genruntimeconfig.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\ref\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Upload_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\obj\Debug\net6.0-windows\Upload_Page.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.exe
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.deps.json
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.runtimeconfig.json
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.pdb
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\Dragablz.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\EntityFramework.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\System.Data.SQLite.EF6.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.AssemblyReference.cache
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Brightness_Page.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Collection_Page.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\CardList.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Upload_Page.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\App.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.cache
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.lref
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\App.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Brightness_Page.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Collection_Page.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\CardList.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\MainWindow.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Upload_Page.baml
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.g.resources
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.GeneratedMSBuildEditorConfig.editorconfig
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfoInputs.cache
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfo.cs
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CoreCompileInputs.cache
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CopyComplete
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\refint\vlapp.dll
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.pdb
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.genruntimeconfig.cache
+F:\lumi2022\github\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\ref\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.exe
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.deps.json
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.runtimeconfig.json
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\vlapp.pdb
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\Dragablz.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\EntityFramework.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.AssemblyReference.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Brightness_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Collection_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\CardList.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Upload_Page.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp_MarkupCompile.lref
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\App.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Arrangement_Page.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Brightness_Page.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Collection_Page.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\CardList.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Control\SideMenuControl.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\Upload_Page.baml
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.g.resources
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfoInputs.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.AssemblyInfo.cs
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CoreCompileInputs.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.csproj.CopyComplete
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\refint\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.pdb
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\vlapp.genruntimeconfig.cache
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\obj\Debug\net6.0-windows\ref\vlapp.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp_collab\vlapp_wpf_collab\vlapp\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll

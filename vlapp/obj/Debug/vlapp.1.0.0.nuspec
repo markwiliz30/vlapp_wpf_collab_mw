@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>vlapp</id>
+    <version>1.0.0</version>
+    <authors>vlapp</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Dragablz" version="0.0.3.223" exclude="Build,Analyzers" />
+        <dependency id="MaterialDesignThemes" version="4.4.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SQLite" version="1.0.116" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.runtimeconfig.json" target="lib\net6.0-windows7.0\vlapp.runtimeconfig.json" />
+    <file src="C:\Users\Zyrel\Documents\Files\Projects\4. Lumi Blinds\WPF\vlapp\vlapp\bin\Debug\net6.0-windows\vlapp.dll" target="lib\net6.0-windows7.0\vlapp.dll" />
+  </files>
+</package>
